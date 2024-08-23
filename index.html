@@ -20,11 +20,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="script.js"></script>
 
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <section class="component first-screen">
+    <section class="component first-screen" id="first-screen">
       <!-- Rating state start -->
       <div class="star">
         <i class="fa-solid fa-star"></i>
@@ -35,34 +36,35 @@
         appreciated to help us improve our offering!
       </p>
       <ul>
-        <div class="round-number" id="rate">
-          <li>1</li>
-        </div>
-        <div class="round-number" id="rate">
-          <li>2</li>
-        </div>
-        <div class="round-number" id="rate">
-          <li>3</li>
-        </div>
-        <div class="round-number" id="rate">
-          <li>4</li>
-        </div>
-        <div class="round-number" id="rate">
-          <li>5</li>
-        </div>
+        <li class="round-number" id="rate">1</li>
+        <li class="round-number" id="rate">2</li>
+        <li class="round-number" id="rate">3</li>
+        <li class="round-number" id="rate">4</li>
+        <li class="round-number" id="rate">5</li>
       </ul>
       <button type="submit" class="submit" id="submit">SUBMIT</button>
     </section>
 
-    <section class="component second-screen" style="display: none">
-      You selected out of 5 Thank you! We appreciate you taking the time to give
-      a rating. If you ever need more support, don’t hesitate to get in touch!
+    <section class="component second-screen" id="second-screen">
+      <img src="/images/illustration-thank-you.svg" class="image" />
+      <p class="rate-selected" id="rateSelected">
+        You selected <span id="injectRate"></span>out of 5
+      </p>
+      <h1>Thank you!</h1>
+      <p class="centered-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+      <button class="restart" id="restart">Restart</button>
     </section>
-    <div class="attribution" style="display: none">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.linkedin.com/in/thomas-philipponneau-webmaster/"
+        >Thomas Philipponneau</a
+      >.
     </div>
   </body>
 </html>
