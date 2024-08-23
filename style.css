@@ -1,0 +1,238 @@
+/* CSS RESET */
+/* Basic CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ROOT */
+
+:root {
+  --main-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 1%, 72%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --main-font: "Overpass";
+  --base-font-size: 13px;
+}
+body {
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--base-font-size);
+  font-family: var(--main-font);
+  color: var(--white-color);
+}
+h1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+p {
+  color: var(--light-gray);
+  padding: 15px 0px 15px 0px;
+  font-weight: 400;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+li {
+  font-weight: 700;
+}
+.component {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  width: 400px;
+}
+.star {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--very-dark-blue);
+  margin-bottom: 20px;
+}
+.fa-star {
+  color: var(--main-color);
+}
+.round-number {
+  height: 40px;
+  width: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--very-dark-blue);
+  margin-bottom: 20px;
+}
+.round-number:hover {
+  background-color: var(--white-color);
+  color: var(--very-dark-blue);
+}
+.round-number:focus {
+  background-color: var(--main-color);
+  color: var(--very-dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.submit {
+  background-color: var(--main-color);
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 10px 0px 10px 0px;
+}
+.submit.submit:hover {
+  background-color: var(--white-color);
+}
