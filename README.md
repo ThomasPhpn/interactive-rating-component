@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://thomasphpn.github.io/interactive-rating-component/)
+- Solution URL: (https://thomasphpn.github.io/interactive-rating-component/)
 
 ## My process
 
